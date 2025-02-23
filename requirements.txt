@@ -1,5 +1,12 @@
-voila>=0.1.8
-ipyvuetify>=0.1.9
-voila-vuetify>=0.0.1a6
-bqplot
+pandas
+streamlit
+math
+pathlib
+plotly
 numpy
+seaborn
+matplotlib
+scipy
+scikit-learn
+statsmodels
+
