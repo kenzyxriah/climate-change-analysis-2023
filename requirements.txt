@@ -1,7 +1,5 @@
 pandas
 streamlit
-math
-pathlib
 plotly
 numpy
 seaborn
