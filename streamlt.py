@@ -16,7 +16,7 @@ from sklearn.cluster import KMeans
 import statsmodels.api as sm
 import plotly.graph_objects as go
 
-df = pd.read_csv(r'C:\Users\Admin\Documents\Data Science\Python\climate_change_p\climate_change_mod.csv')
+url = "https://raw.githubusercontent.com/kenzyxriah/climate-change-analysis-2023/main/climate_change_mod.csv"
 
 # Streamlit App Title
 st.title("🌍 Climate Change Impact and Risk Assessment")
@@ -53,7 +53,7 @@ By providing these insights, this project aims to **enhance awareness** and enco
 # Declare some useful functions.
 @st.cache_data
 def load_data():
-    return pd.read_csv(r'C:\Users\Admin\Documents\Data Science\Python\climate_change_p\climate_change_mod.csv')  
+    return pd.read_csv(url)  
 
 df = load_data()
 
