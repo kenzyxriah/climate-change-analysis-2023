@@ -1,5 +1,6 @@
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://gdp-dashboard-template.streamlit.app](https://climate-change-analysis-2023.streamlit.app/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://climate-change-analysis-2023.streamlit.app/)
+
 
 
 ### How to run it the streamlit.py on your own machine
