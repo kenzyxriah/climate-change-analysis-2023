@@ -196,7 +196,7 @@ numeric_cols = ['Avg Temperature (°C)', 'CO2 Emissions (Tons/Capita)', 'Sea Lev
                 'Forest Area (%)']
 
 # Create two columns: A | B Plots Stacked in left column, C | D stacked in right column (merged)
-col1, col2 = st.columns([0.5, 1.2])  # Adjust width ratio as needed
+col1, col2 = st.columns([0.5, 0.9])  # Adjust width ratio as needed
 
 # Left Column: Subplots (Scatter/Heatmap + Doughnut Chart)
 with col1:
