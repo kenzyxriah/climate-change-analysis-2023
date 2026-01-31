@@ -50,7 +50,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 def load_data():
-    return pd.read_csv(r'climate_change_mod.csv')  
+    return pd.read_csv("https://raw.githubusercontent.com/kenzyxriah/climate-change-analysis-2023/main/climate_change_mod.csv")  
 
 df = load_data()
 
@@ -412,6 +412,7 @@ with col2:
     st.plotly_chart(visualize_rank(ranked_df))
     with st.expander("📊 View Dataset", expanded=False):
         st.dataframe(ranked_df[['Country', 'Rank', 'Risk Score']].sort_values(by="Rank", ascending = False).reset_index(drop=True))
+
 
 
 
