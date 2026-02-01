@@ -1,11 +1,5 @@
 import streamlit as st
 import pandas as pd
-import math
-from pathlib import Path
-import pandas as pd
-import streamlit as st
-import math
-from pathlib import Path
 import plotly.express as px
 import numpy as np
 import seaborn as sns
@@ -412,6 +406,7 @@ with col2:
     st.plotly_chart(visualize_rank(ranked_df))
     with st.expander("📊 View Dataset", expanded=False):
         st.dataframe(ranked_df[['Country', 'Rank', 'Risk Score']].sort_values(by="Rank", ascending = False).reset_index(drop=True))
+
 
 
 
