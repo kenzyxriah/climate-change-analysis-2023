@@ -175,12 +175,15 @@ with col1:
         # Compute correlation per continent per year
         if plot_by == "Continent":
             correlation_per_group = df_plot.groupby(["Year", "Continent"]).apply(
-                lambda x: x[[x_col, y_col]].corr().iloc[0, 1] if len(x) > 1 else None
+                lambda x: x[[x_col, y_col]].corr().iloc[0, 1] if len(x) > 1 else None, 
+                 include_groups=False
             ).reset_index(name="Correlation")
         else:
             correlation_per_group = df_plot.groupby(["Year"]).apply(
-                lambda x: x[[x_col, y_col]].corr().iloc[0, 1] if len(x) > 1 else None
+                lambda x: x[[x_col, y_col]].corr().iloc[0, 1] if len(x) > 1 else None,
+                include_groups=False
             ).reset_index(name="Correlation")
+
 
         # Merge correlation data
         df_plot = df_plot.merge(
@@ -406,6 +409,7 @@ with col2:
     st.plotly_chart(visualize_rank(ranked_df))
     with st.expander("📊 View Dataset", expanded=False):
         st.dataframe(ranked_df[['Country', 'Rank', 'Risk Score']].sort_values(by="Rank", ascending = False).reset_index(drop=True))
+
 
 
 
