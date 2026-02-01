@@ -1,5 +1,7 @@
+streamlit>=1.40.0
+streamlit-nightly
 pandas
-streamlit
+altair>=5.0.0
 plotly
 numpy
 seaborn
